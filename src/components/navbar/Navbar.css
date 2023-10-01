@@ -1,0 +1,145 @@
+/* Change background color navbar  */
+.navbar {
+  background-color: #9b9d97; 
+}
+
+/* Adjust brand padding */
+.navbar .navbar-brand {
+  padding-top: 0; /* Remove top padding */
+}
+
+/* Remove border, outline, and padding from navbar toggler */
+.navbar .navbar-toggler {
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+/* Remove box shadow from navbar toggler focus */
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Change color, Remove border, and margin bottom from menu-icon */
+.navbar .navbar-toggler .menu-icon {
+  color: #333;
+  border: none;
+  margin-bottom: 0;
+}
+
+/* Change background color for navbar offcanvas */
+.navbar .offcanvas {
+  background-color: #b3b5b0;
+}
+
+/* Add border bottom to offcanvas header */
+.navbar .offcanvas .offcanvas-header {
+  border-bottom: 0.1rem solid #333;
+}
+
+/* Change color for nav link */
+.navbar .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link {
+  color: #444;
+}
+
+/* Change color for nav link active */
+.navbar .offcanvas .offcanvas-body .navbar-nav .nav-item .active {
+  color: #222;
+}
+
+/* Add border and, border radius to search */
+.navbar .offcanvas .offcanvas-body .search {
+  border: 0.1rem solid #000;
+  border-radius: 2rem;
+}
+
+/* Query Media */
+
+/* Mobile Small devices (landscape phones, 375 and up) */
+@media (min-width: 320px) {
+  /* Change font size for navbar brand */
+  .navbar .navbar-brand {
+    font-size: 1rem;
+  }
+
+  /* Change max width for offcanvas */
+  .offcanvas {
+    max-width: 70%;
+  }
+
+  /* Change font size for offcanvas title */
+  .navbar .offcanvas .offcanvas-header .offcanvas-title {
+    font-size: 1rem;
+  }
+
+  /* Remove padding left for navbar nav */
+  .navbar .offcanvas .offcanvas-body .navbar-nav {
+    padding-left: 0;
+  }
+
+  /* Add margin-top and, Change height for navbar search */
+  .navbar .offcanvas .offcanvas-body .search {
+    margin-top: 1rem;
+    height: 5vh;
+  }
+}
+
+/* Mobile Small devices (landscape phones, 500 and up) */
+@media (min-width: 500px) {
+  /* Change font size for navbar brand */
+  .navbar .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  /* Change font size for offcanvas title */
+  .navbar .offcanvas .offcanvas-header .offcanvas-title {
+    font-size: 1.2rem;
+  }
+
+  /* Change height for navbar search */
+  .navbar .offcanvas .offcanvas-body .search {
+    height: 6vh;
+  }
+}
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* Change font size for navbar brand */
+  .navbar .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  /* Change font size for offcanvas title */
+  .navbar .offcanvas .offcanvas-header .offcanvas-title {
+    font-size: 1.25rem;
+  }
+
+  /* Change font size for nav link */
+  .navbar .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+  }
+
+  /* Change font size for navbar search */
+  .navbar .offcanvas .offcanvas-body .search {
+    font-size: 1rem;
+  }
+}
+
+/* large devices (desktop, 992px and up */
+@media(min-width : 992px){
+  /* Change max width for offcanvas */
+  .offcanvas {
+    max-width: 100%;
+  }
+
+  /* Change font size, width, Change height, and Add margin-top for navbar search */
+  .navbar .offcanvas .offcanvas-body .search {
+    font-size: 1rem;
+    width: 50%;
+    height: 5vh;
+    margin-top: .3rem;
+  }
+}
+

@@ -1,0 +1,150 @@
+/* Modal background styling */
+.modalBackground {
+  position: fixed; /* Fixed positioning */
+  background-color: rgba(10, 8, 8, 0.793); /* Semi-transparent background */
+  top: 0; /* Top positioning */
+  right: 0; /* Right positioning */
+  left: 0; /* Left positioning */
+  bottom: 0; /* Bottom positioning */
+  display: flex; /* Flexible layout */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  z-index: 99; /* Highest stacking order */
+}
+
+/* Define modal background and container styles */
+.modalBackground .modalContainer {
+  /* Background color */
+  background-color: #fff;
+  /* Width and height */
+  width: 50%;
+  height: 50%;
+  /* Vertical alignment */
+  line-height: 5rem;
+  /* Font size */
+  font-size: 1.5rem;
+  /* Border */
+  border: 0.1rem solid #000;
+  /* Border radius */
+  border-radius: 0.5rem;
+  /* Box shadow */
+  box-shadow: 0 0 0.5rem #888;
+  /* Text alignment */
+  text-align: center;
+}
+
+/* Define modal container and header styles */
+.modalContainer .modalHeader {
+  /* Set border bottom for modal header */
+  border-bottom: 0.1rem solid #000;
+}
+
+/* Define Query Media  */
+
+/* Small devices (mobiles, 320px and up) */
+@media (min-width: 320px){
+  /* Change the modal title font  */
+  .modalContainer .modalHeader .modalTitle {
+    /* Font size */
+    font-size: 1rem;
+  }
+
+  /* Change the modal user-name font */
+  .modalContainer .modalBody .user-name {
+    /* Font size */
+    font-size: 1.2rem;
+  }
+
+  /* Change the modal user-email font */
+  .modalContainer .modalBody .user-email {
+    /* Font size */
+    font-size: 1rem;
+  }
+
+  /* Change the modal user-age and user-gender fonts */
+  .modalContainer .modalBody .user-age,
+  .modalContainer .modalBody .user-gender  {
+    /* Font size */
+    font-size: .9rem;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  /* Change the modal title font  */
+  .modalContainer .modalHeader .modalTitle {
+    /* Font size */
+    font-size: 1.2rem;
+  }
+
+  /* Change the modal user-name font */
+  .modalContainer .modalBody .user-name {
+    /* Font size */
+    font-size: 1.5rem;
+  }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* Change the modal title font  */
+  .modalContainer .modalHeader .modalTitle {
+    /* Font size */
+    font-size: 1.5rem;
+  }
+
+  /* Change the modal user-name font */
+  .modalContainer .modalBody .user-name {
+    /* Font size */
+    font-size: 2rem;
+  }
+
+  /* Change the modal user-email font */
+  .modalContainer .modalBody .user-email {
+    /* Font size */
+    font-size: 1.2rem;
+  }
+
+  /* Change the modal user-age and user-gender fonts */
+  .modalContainer .modalBody .user-age,
+  .modalContainer .modalBody .user-gender  {
+    /* Font size */
+    font-size: 1rem;
+  }
+}
+
+/* large devices (landscape laptop, 578px and up) */
+@media (min-width: 576px) { 
+  /* Change the modal title font  */
+  .modalContainer .modalHeader .modalTitle {
+    /* Font size */
+    font-size: 1.5rem;
+  }
+
+  /* Change the modal user-name font */
+  .modalContainer .modalBody .user-name {
+    /* Font size */
+    font-size: 1.5rem;
+  }
+ }
+
+/* meduime devices (landscape tablet, 768px and up) */
+@media (min-width: 768px) { 
+  /* Change the modal user-name font */
+  .modalContainer .modalBody .user-name {
+    /* Font size */
+    font-size: 2rem;
+  }
+
+  /* Change the modal user-email font */
+  .modalContainer .modalBody .user-email {
+    /* Font size */
+    font-size: 1.5rem;
+  }
+
+  /* Change the modal user-age and user-gender fonts */
+  .modalContainer .modalBody .user-age,
+  .modalContainer .modalBody .user-gender  {
+    /* Font size */
+    font-size: 1.2rem;
+  }
+}

@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import AddUser from './components/addUser/AddUser';
+import Navbar from './components/navbar/Navbar';
+import ReadUser from './components/readUser/ReadUser';
+import UpdateUser from './components/updateUser/UpdateUser';
+import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <div>
+          {/* <Navbar/> */}
+          <Navbar add="/" read='/read' />
+          <Outlet/>
+        </div>
+
+        <div className='container'>
+          <div className='d-flex align-items-center justify-content-center'>
+            <Routes>
+              <Route exact path='/' element={<AddUser />}/>
+              <Route exact path='/read' element={<ReadUser />}/>
+              <Route exact path='/edit/:id' element={<UpdateUser />}/>
+            </Routes>
+          </div>
+        </div>
+      </Router>
     </div>
   );
 }
